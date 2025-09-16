@@ -1,0 +1,319 @@
+/*RESET*/
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+p,
+ul,
+ol,
+li,
+a,
+figure,
+figcaption,
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: normal;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  color: inherit;
+  vertical-align: baseline;
+  line-height: 0;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color: #007f64;
+}
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: 1px solid rgb(0, 0, 0);
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #3de0bd;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: none;
+  border-top: none;
+}
+/*SCHOOL COLOURS*/
+body#bus h1,
+body#bus h2 {
+  background-color: #c59217;
+}
+body#bus h3,
+body#bus a {
+  color: #c59217;
+}
+body#cons h1,
+body#cons h2 {
+  background-color: #4b92db;
+}
+body#cons h3,
+body#cons a {
+  color: #4b92db;
+}
+body#mse h1,
+body#mse h2 {
+  background-color: #007f64;
+}
+body#mse h3,
+body#mse a {
+  color: #007f64;
+}
+body#hps h1,
+body#hps h2 {
+  background-color: #006890;
+}
+body#hps h3,
+body#hps a {
+  color: #006890;
+}
+body#ict h1,
+body#ict h2 {
+  background-color: #007698;
+}
+body#ict h3,
+body#ict a {
+  color: #007698;
+}
+body#ma h1,
+body#ma h2 {
+  background-color: #aa272f;
+}
+body#ma h3,
+body#ma a {
+  color: #aa272f;
+}
+body#trans h1,
+body#trans h2 {
+  background-color: #44697d;
+}
+body#trans h3,
+body#trans a {
+  color: #44697d;
+}
+body#ht h1,
+body#ht h2 {
+  background-color: #d52b1e;
+}
+body#ht h3,
+body#ht a {
+  color: #d52b1e;
+}
+body#cals h1,
+body#cals h2 {
+  background-color: #e9994a;
+}
+body#cals h3,
+body#cals a {
+  color: #e9994a;
+}
+body#ct h1,
+body#ct h2 {
+  background-color: #8c8b8a;
+}
+body#ct h3,
+body#ct a {
+  color: #444;
+}
+/*GENERAL*/
+body,
+h1,
+h2,
+table {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /* Firefox */
+  -webkit-box-sizing: border-box; /* Safari */
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 80px 20px 80px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figcaption {
+  line-height: 1;
+}
+h1,
+h3,
+h4,
+h5,
+h6,
+thead {
+  font-weight: bold;
+}
+h1,
+h2 {
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+}
+h1 {
+  padding: 15px 15px 10px 15px;
+  text-transform: uppercase;
+}
+h2 {
+  padding: 0px 15px 15px 15px;
+  font-style: italic;
+}
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+figcaption,
+table {
+  font-size: 14px;
+}
+h3,
+h4,
+h5,
+p,
+li,
+figcaption,
+table {
+  color: #535557;
+}
+h3 {
+  text-transform: uppercase;
+}
+h3 {
+  width: 100%;
+  margin-top: 40px;
+  border-bottom: 2px solid;
+}
+h6 {
+  color: #aaabab;
+}
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+img {
+  margin-top: 15px;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-top: 0 !important;
+}
+p,
+a,
+li,
+table {
+  line-height: 145%;
+}
+p#em {
+  line-height: 100%;
+  font-style: italic;
+  font-weight: bold;
+}
+li {
+  margin-left: 40px;
+}
+ul li {
+  list-style-type: square;
+}
+a {
+  font-weight: bold;
+}
+a:hover {
+  color: #aaabab !important;
+}
+/*IMAGES*/
+img,
+figcaption {
+  display: block;
+}
+img.large {
+  width: 100%;
+  height: 100%;
+}
+img.small {
+  width: 50%;
+  height: 100%;
+}
+figcaption {
+  margin-top: 5px;
+  font-weight: bold;
+}
+/*TABLE SPECIFIC*/
+table {
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid #aaabab;
+}
+th,
+td {
+  padding: 5px;
+}
+/*FOOTER*/
+p#footer {
+  width: 100%;
+  margin: 45px 0 0 0;
+  padding-top: 15px;
+  border-top: 1px solid;
+  text-align: center;
+  color: #aaabab;
+}
+.column {
+  float: left;
+  width: 50%;
+}
