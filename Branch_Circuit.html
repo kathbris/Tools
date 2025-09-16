@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <title>2024 Canadian Branch Circuit calculation<br></title>
+    <!-- STYLESHEET LINKS START -->
+    <link rel="stylesheet" media="screen" href="screen.css" />
+    <script src="script.js" defer></script>
+    <script>
+      function openTab(evt, tabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+  </head>
+  <body id="mse">
+    <h1>2024 Canadian Branch Circuit calculation</h1>
+    <h2>Select which calculation you would like to perform;</h2>
+    <div id="navigation">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'General Branch Circuit')">
+            Continuous/Non-Continuous Branch Circuit
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Heating Branch Circuit')">
+            Table 5 Branch Circuits
+        </button>
+      </div>
+    </div>
+    <button onClick="self.location.reload();">New Examples</button>
+    <div id="General Branch Circuit" class="tabcontent">
+      <h3>General Branch Cicuit Calculation</h3>
+      <p>Determine the minimum conductor size and maximum overcurrent</p>
+      <div id="div1"></div>
+    </div>
+    <div id="Heating Branch Circuit" class="tabcontent">
+      <h3>Table 5 Branch Cicruit Calculations</h3>
+      <p>
+        Dertermine the minimum conductor size and maximum overcurrent
+      </p>
+      <div id="div2"></div>
+    </div>
+  </body>
+</html>
